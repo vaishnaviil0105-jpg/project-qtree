@@ -1,11 +1,11 @@
-FROM python:3.13-slim
+FROM nginx:alpine
 
-WORKDIR /app
+RUN rm -rf /usr/share/nginx/html/*
 
-COPY . .
+COPY index.html /usr/share/nginx/html/
+COPY style.css /usr/share/nginx/html/
+COPY script.js /usr/share/nginx/html/
 
-RUN pip install --no-cache-dir -r requirments.txt
+EXPOSE 80
 
-EXPOSE 5000
-
-CMD ["python", "app.py"]
+CMD ["nginx", "-g", "daemon off;"]
