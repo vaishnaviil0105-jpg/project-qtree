@@ -38,7 +38,7 @@ pipeline {
 
                 sh '''
                 docker run -d \
-                -p 8080:80 \
+                -p 8081:80 \
                 --name dashboard \
                 ghcr.io/vaishnaviil0105-jpg/nginx:latest
                 '''
