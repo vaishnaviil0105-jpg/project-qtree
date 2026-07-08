@@ -34,20 +34,19 @@ pipeline {
 
         stage('Deploy') {
 
-            steps {
+    steps {
 
-                sh '''
-                docker run -d \
-                -p 8081:80 \
-                --name dashboard \
-                ghcr.io/vaishnaviil0105-jpg/nginx:latest
-                '''
+        sh '''
+        docker rm -f dashboard || true
 
-            }
-
-        }
-
+        docker run -d \
+        -p 8081:80 \
+        --name dashboard \
+        ghcr.io/vaishnaviil0105-jpg/nginx:latest
+        '''
 
     }
 
+        } 
+    }
 }
