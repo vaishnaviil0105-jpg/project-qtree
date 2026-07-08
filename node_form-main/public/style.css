@@ -1,0 +1,71 @@
+h1{
+    font-family:'Times New Roman', Times, serif;
+    margin-left: 30px;
+    margin-top: 40px;
+    color: #b2a4e3;
+    font-size: 50px;
+}
+
+form{
+    border: none;
+    /* border-radius: 25px; */
+    /* margin: 30px 30px 25px 25px; */
+    margin: 70px;
+    padding: 25px;
+    border-radius: 5px;
+    background-color: #b8b8b858;
+    padding: 20px;
+    width: 60%;
+
+}
+
+input{
+    width: 100%;
+    padding: 10px 0px 10px 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #b7b7b71c;
+    
+}
+::placeholder{
+    color:#ffffff;
+}
+
+select{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #ffffff37;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+
+#submit{
+    width: 100%;
+    padding: 16px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #df6c6c;
+    color: #ffffff;
+}
+
+textarea{
+    width: 90%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #ffffff26;
+}
+
+body{
+    background-image: url("video.gif");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}

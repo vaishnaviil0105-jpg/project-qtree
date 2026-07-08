@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Register</h1>
+    <form method="post" action="/signup">
+       <p>First Name: </p> 
+        <input type="text" name="fname" placeholder="Enter Your First Name"><br><br>
+       <p>Last Name: </p> 
+        <input type="text" name="lname" placeholder="Enter Your Last Name"><br><br>
+        
+        <p>Email: </p>
+        <input type="email" name="email" placeholder="Enter your Email"><br><br>
+       <p>DOB: </p> 
+        <input name="date" type="date">
+        <!-- <p>Course: </p> -->
+        <!-- <select size="1">
+            <option value="">Select</option>
+            <option value="">JAVA</option>
+            <option value="">VLSI</option>
+            <option value="">Python</option>
+        </select><br><br> -->
+        <!-- <p>Gender: </p>
+        <input type="radio" name="M">Male
+        <input type="radio" name="F">Female <br><br> -->
+
+        <p>Address : </p><br>
+        <textarea placeholder="Your Address" name="address" id="address" cols="30" rows="10"></textarea>
+        <br><br>
+   <input type="submit" id="submit" value="submit">     
+         <br>
+        <br>
+    </form>
+</body>
+</html>
